@@ -50,16 +50,15 @@ public class MainActivity extends Activity {
 
         button3 = (Button) findViewById(R.id.button3);
         button3.setText("card");
+
+        randomizeCards();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        randomizeCards();
-
         setupListeners();
-
     }
 
     private void setupListeners() {
